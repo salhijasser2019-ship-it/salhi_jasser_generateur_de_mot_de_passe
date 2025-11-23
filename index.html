@@ -4,80 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Générateur de mot de passe</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Bienvenu dans mon site web pour génerer un mot de passe</h1>
-    <table>
-        <tbody>
-            <tr>
-                <td>
-                    <h1>Générateur de mot de passe</h1>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <span>longueur de mot de passe</span>
-                </td>
-                <td>
-                    <input type="range" min="6" max="64">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <span>des caractères miniscules</span>
-                </td>
-                <td>
-                    <input type="checkbox">
-                    <label>(par exemple abcdefgh)</label>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <span>des caractères majuscules</span>
-                </td>
-                <td>
-                    <input type="checkbox">
-                    <label>(par exemple ABCDEFGH)</label>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <span>des caractères spéciaux</span>
-                </td>
-                <td>
-                    <input type="checkbox">
-                    <label> (par exemple @*#+$)</label>
-                </td>
-            </tr>
-            <tr>
-                <td>
+    <h1>Générateur de mot de passe</h1>
 
 
-                </td>
-                <td>
-                    <button>génerer le MDP</button>
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>
-                    <input type="text">
-                    <label>weak/strong/verystrong</label>
-                </td>
-            </tr>
-            <tr>
-                <td>
 
-                </td>
-                <td>
-                    <button>copier le MDP</button>
-                </td>
-            </tr>
+    <div class="box1">
+        <h2>Bienvenue dans mon site web pour générer un mot de passe</h2>
 
-        </tbody>
-    </table>
+        <button>Générer le MDP</button>
+        <input type="text">
+        <div>
+            <label class="strength-label">weak</label>
+        </div>
+        <div class="btn"><button id="btn">Copier le MDP</button></div>
+    </div>
+    <div class="range">
+        <span>Longueur du mot de passe</span>
+        <input type="range" min="6" max="64">
+    </div>
+    <div class="option">
+        <span>Caractères minuscules(abcde)</span>
+        <input type="checkbox">
+    </div>
+
+    <div class="option">
+        <span>Caractères majuscules(ABCDEF)</span>
+        <input type="checkbox">
+    </div>
+
+    <div class="option">
+        <span>Caractères spéciaux(@\-+{[})</span>
+        <input type="checkbox">
+    </div>
+
+
 
 </body>
 
