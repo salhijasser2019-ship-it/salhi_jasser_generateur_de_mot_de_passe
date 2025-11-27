@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #c8d6e5, #e0e5ec);
+    color: #000000;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.strength-label {
+    padding: 12px;
+    margin: 10px;
+    color: black;
+    font-weight: bold;
+    background-color: #69ef91;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+/* -------- TITRE -------- */
+h1 {
+    font-size: 2.8rem;
+    color: #ff0000;
+    text-align: center;
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+
+/* -------- BOX PRINCIPALE -------- */
+.box1 {
+    background: rgba(255, 255, 255, 0.4);
+    padding: 30px 30px;
+    width: 90%;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.box1:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.box1 h2 {
+    font-size: 1.9rem;
+    color: #0000ff;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.08);
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+/* -------- INPUT TEXTE -------- */
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 10px;
+    outline: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* -------- BOUTONS -------- */
+button {
+    width: 40%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    background: #4d49b8;
+    color: #000000;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.25s;
+}
+
+button:hover {
+    background: #69ef91;
+    transform: translateY(-2px);
+}
+
+
+.btn {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/*  RANGE SLIDER  */
+.range {
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    font-weight: bold;
+}
+
+/* Slider */
+input[type="range"] {
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    font-weight: bold;
+    background: #cb7575;
+    outline: none;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #5371d4;
+    /* gris doux */
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, transform 0.2s;
+}
+
+
+
+
+
+/* -------- OPTIONS CHECKBOX -------- */
+.container {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+
+}
+
+.box {
+    width: auto;
+    max-width: 600px;
+    border-radius: 10px;
+    margin: 10px;
+    font-weight: bold;
+    background-color: #cb7575;
+    box-shadow: 0 5px 15px rgba(58, 66, 67, 0.781);
+    padding: 10px 15px;
+}
+
+.option span {
+    font-size: 16px;
+    color: #000000;
+}
+
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: #888888;
+    cursor: pointer;
+
+}
+
+@media (max-width: 630px) {
+
+
+    .box1,
+    .range {
+        width: 100%;
+    }
+
+    .h2 {
+        font-weight: 400;
+    }
+
+    .box {
+        width: 95%;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button,
+    input[type="text"] {
+        width: 100%;
+    }
+}
+
+img {
+    margin: 40px;
+    border-radius: 15px;
+}
