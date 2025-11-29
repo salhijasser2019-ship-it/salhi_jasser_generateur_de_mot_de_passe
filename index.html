@@ -9,40 +9,67 @@
 </head>
 
 <body>
-    <h1>Générateur de mot de passe</h1>
-
-
-
+    <h1 class="entete">Générateur de mot de passe</h1>
+    <div class="entete">
+        <h3><span class="part1">Bienvenue sur notre générateur de mots de passe sécurisé !</span>
+            <span class="part2">Pour renforcer la protection de vos comptes, il est essentiel de choisir un mot de passe
+                suffisamment long
+                et difficile à deviner. Nous vous recommandons d’opter pour une longueur convenable (au moins 12
+                caractères)
+                afin de réduire les risques de piratage.<br>
+                Choisissez ensuite l’une des options ci-dessous pour personnaliser votre mot de passe :<br>
+                <bold>Lettres majuscules<br></bold>
+                <bold>Lettres minuscules<br></bold>
+                <bold>Chiffres<br></bold>
+                <bold>Symboles spéciaux<br></bold>
+                En quelques secondes, vous obtenez un mot de passe robuste, unique et parfaitement adapté à vos besoins.
+            </span>
+        </h3>
+    </div>
     <div class="box1">
-        <h2>Bienvenue dans mon site web pour générer un mot de passe</h2>
-
+        <h2>Veuillez choisir au moins une des options ci-dessous !</h2>
         <button>Générer le MDP</button>
         <input type="text">
-        <div>
+        <div class="btn"><button id="btn">📋 Copier le MDP</button></div>
+        <div class="strength">
             <label class="strength-label">weak</label>
         </div>
-        <div class="btn"><button id="btn">Copier le MDP</button></div>
+        <div class="photo">
+            <img class="image" loading="eager"
+                src="https://th.bing.com/th/id/OIP.MmxhC7kuMEDjiiTwhgIb2wHaGa?w=217&h=188&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3s"
+                alt="vérifier votre connexion">
+        </div>
+
     </div>
     <div class="range">
-        <span>Longueur du mot de passe</span>
-        <input type="range" min="6" max="64">
-    </div>
-    <div class="option">
-        <span>Caractères minuscules(abcde)</span>
-        <input type="checkbox">
+        <span>Longueur du mot de passe :</span>
+        <span id="currentValue">6</span> <!-- valeur actuelle -->
+        <input id="length" type="range" min="6" max="64" value="6">
     </div>
 
-    <div class="option">
-        <span>Caractères majuscules(ABCDEF)</span>
-        <input type="checkbox">
+    <div class="container">
+        <div class="box">
+            <span>Caractères minuscules(abcde)</span>
+            <input type="checkbox">
+        </div>
+
+        <div class="box">
+            <span>Caractères majuscules(ABCDEF)</span>
+            <input type="checkbox">
+        </div>
+
+        <div class="box">
+            <span>Caractères spéciaux(@\-+{[})</span>
+            <input type="checkbox">
+        </div>
+        <div class="box">
+            <span>Nombres (123789)</span>
+            <input type="checkbox">
+        </div>
     </div>
 
-    <div class="option">
-        <span>Caractères spéciaux(@\-+{[})</span>
-        <input type="checkbox">
-    </div>
 
-
+    <script src="script.js"></script>
 
 </body>
 
