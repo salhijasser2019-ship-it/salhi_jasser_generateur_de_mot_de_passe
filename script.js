@@ -34,6 +34,7 @@ btnGen.addEventListener("click", () => {
     }
 
     input.value = password;
+    savePassword(password);
 
     // Déterminer la force
     updateStrength(password, chars);
@@ -97,4 +98,39 @@ const currentValue = document.getElementById("currentValue");
 lengthRange.addEventListener("input", () => {
     currentValue.textContent = lengthRange.value;
 });
+// Récupérer l'élément LISTE
+const passwordList = document.getElementById("passwordList");
+
+// Charger les mots de passe au démarrage
+function loadPasswords() {
+    const saved = JSON.parse(localStorage.getItem("passwords")) || [];
+    passwordList.innerHTML = "";
+    saved.forEach(pwd => {
+        const li = document.createElement("li");
+        li.textContent = pwd;
+        passwordList.appendChild(li);
+    });
+}
+
+// Sauvegarder un mot de passe
+function savePassword(password) {
+    const saved = JSON.parse(localStorage.getItem("passwords")) || [];
+    saved.push(password);
+    localStorage.setItem("passwords", JSON.stringify(saved));
+    loadPasswords();
+}
+
+// Effacer tous les mots de passe
+document.getElementById("clearPasswords").addEventListener("click", () => {
+    localStorage.removeItem("passwords");
+    loadPasswords();
+});
+
+// ---------------------------------------
+// → APPELLE savePassword() quand tu génères un MDP
+// ---------------------------------------
+
+// Charger les mots de passe quand la page s'ouvre
+loadPasswords();
+
 
