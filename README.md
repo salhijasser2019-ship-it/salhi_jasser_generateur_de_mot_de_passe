@@ -28,7 +28,7 @@ Le script génère instantanément un mot de passe et indique sa force : **faibl
 
 
 ## 🔗 Lien GitHub Pages
-
+https://salhijasser2019-ship-it.github.io/salhi_jasser_generateur_de_mot_de_passe/
 
 
 ## 🧪 Nouveautés apprises durant le projet
