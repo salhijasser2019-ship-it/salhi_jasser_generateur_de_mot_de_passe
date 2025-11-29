@@ -225,3 +225,32 @@ input[type="checkbox"] {
         width: 100%;
     }
 }
+
+/* Zone des mots de passe enregistrés */
+.saved-passwords {
+    margin: 30px auto;
+    width: 90%;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.4);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+.saved-passwords h2 {
+    margin-bottom: 10px;
+}
+
+#passwordList {
+    list-style: none;
+    padding: 0;
+}
+
+#passwordList li {
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    word-break: break-all;
+    border: 1px solid #ddd;
+}
