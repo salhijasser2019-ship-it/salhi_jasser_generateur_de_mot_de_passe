@@ -10,6 +10,7 @@ const photo = document.querySelector(".photo");
 const lowercase = "abcdefghijklmnopqrstuvwxyz";
 const uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const symbols = "@-+{}[]()!#$%&*?";
+const numbers = "0123456789";
 
 btnGen.addEventListener("click", () => {
     let length = lengthRange.value;
@@ -18,6 +19,7 @@ btnGen.addEventListener("click", () => {
     if (checkboxes[0].checked) chars += lowercase;
     if (checkboxes[1].checked) chars += uppercase;
     if (checkboxes[2].checked) chars += symbols;
+    if (checkboxes[3].checked) chars += numbers;
 
     if (chars === "") {
         alert("Veuillez cocher au moins une option !");
@@ -42,6 +44,7 @@ function updateStrength(password, chars) {
     let strength = 0;
 
     if (/[a-z]/.test(password)) strength++;
+    if (/[0-9]/.test(password)) strength++;
     if (/[A-Z]/.test(password)) strength++;
     if (/[@\-+{}\[\]()!#$%&*?]/.test(password)) strength++;
     if (password.length >= 12) strength++;
@@ -70,13 +73,7 @@ function updateStrength(password, chars) {
 
     }
 }
-
-// Bouton copier
-/*copyBtn.addEventListener("click", () => {
-    input.select();
-    document.execCommand("copy");
-    alert("Mot de passe copié !");
-});*/
+/*---gestion de boutton de copier---*/
 const btnCopy = document.getElementById("btn");
 
 btnCopy.addEventListener("click", () => {
@@ -100,18 +97,4 @@ const currentValue = document.getElementById("currentValue");
 lengthRange.addEventListener("input", () => {
     currentValue.textContent = lengthRange.value;
 });
-const btnLight = document.getElementById("light");
-const btnDark = document.getElementById("dark");
-const btnHacker = document.getElementById("hacker");
 
-btnLight.addEventListener("click", () => {
-    document.body.className = "light";
-});
-
-btnDark.addEventListener("click", () => {
-    document.body.className = "dark";
-});
-
-btnHacker.addEventListener("click", () => {
-    document.body.className = "hacker";
-});
