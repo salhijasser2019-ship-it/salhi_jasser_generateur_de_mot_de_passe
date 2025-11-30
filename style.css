@@ -43,7 +43,7 @@ h1 {
     width: 90%;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+    margin: 30px;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -254,3 +254,4 @@ input[type="checkbox"] {
     word-break: break-all;
     border: 1px solid #ddd;
 }
+
