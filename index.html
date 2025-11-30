@@ -18,35 +18,20 @@
                 caractères)
                 afin de réduire les risques de piratage.<br>
                 Choisissez ensuite l’une des options ci-dessous pour personnaliser votre mot de passe :<br>
-                <bold>🔒Lettres majuscules</bold>
-                <bold>🔒Lettres minuscules</bold>
-                <bold>🔒Chiffres</bold>
-                <bold>🔒Symboles spéciaux<br></bold>
+                <bold>✅Lettres majuscules</bold>
+                <bold>✅Lettres minuscules</bold>
+                <bold>✅Chiffres</bold>
+                <bold>✅Symboles spéciaux<br></bold>
                 En quelques secondes, vous obtenez un mot de passe robuste, unique et parfaitement adapté à vos besoins.
             </span>
         </h3>
     </div>
-    <div class="box1">
-        <h2>Veuillez choisir au moins une des options ci-dessous !</h2>
-        <button>Générer le MDP</button>
-        <input type="text">
-        <div class="btn"><button id="btn">📋 Copier le MDP</button></div>
-        <div class="strength">
-            <label class="strength-label">weak</label>
-        </div>
-        <div class="photo">
-            <img class="image" loading="eager"
-                src="https://th.bing.com/th/id/OIP.MmxhC7kuMEDjiiTwhgIb2wHaGa?w=217&h=188&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3s"
-                alt="vérifier votre connexion">
-        </div>
-
-    </div>
+    <h2 class="entete">Veuillez choisir la longueur et au moins une des options ci-dessous !</h2>
     <div class="range">
         <span>Longueur du mot de passe :</span>
         <span id="currentValue">6</span> <!-- valeur actuelle -->
         <input id="length" type="range" min="6" max="64" value="6">
     </div>
-
     <div class="container">
         <div class="box">
             <span>Caractères minuscules(abcde)</span>
@@ -67,6 +52,25 @@
             <input type="checkbox">
         </div>
     </div>
+
+    <div class="box1">
+
+        <button>Générer le MDP</button>
+        <input type="text">
+        <div class="btn"><button id="btn">📋 Copier le MDP</button></div>
+        <div class="strength">
+            <label class="strength-label">weak</label>
+        </div>
+        <div class="photo">
+            <img class="image" loading="eager"
+                src="https://th.bing.com/th/id/OIP.MmxhC7kuMEDjiiTwhgIb2wHaGa?w=217&h=188&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3s"
+                alt="vérifier votre connexion">
+        </div>
+
+    </div>
+
+
+
     <div class="saved-passwords">
         <h2>📁 Mots de passe enregistrés</h2>
         <button id="clearPasswords">🗑️ Effacer tout</button>
@@ -79,4 +83,3 @@
 </body>
 
 </html>
-
