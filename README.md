@@ -44,19 +44,19 @@ https://salhijasser2019-ship-it.github.io/salhi_jasser_generateur_de_mot_de_pass
 
 
 ## ⚠️ Difficultés rencontrées
--comment gérer différents bouton
--comment comtroler la difficulté de mot de passe et quelle sont les critères de comtaraison 
--quelle sont les méthodes pour sauvegarder les historiques ou les mot de passes récemment générer
--comment ajouter quelques choses qui interpréte la force de mot de passe 
--comment choisir des couleurs douce et comfortable aux yeux
--plusieurs partie du codes ce qui difficle â distiguer l'un de l'autre 
+- comment gérer différents bouton
+- comment comtroler la difficulté de mot de passe et quelle sont les critères de comtaraison 
+- quelle sont les méthodes pour sauvegarder les historiques ou les mot de passes récemment générer
+- comment ajouter quelques choses qui interpréte la force de mot de passe 
+- comment choisir des couleurs douce et comfortable aux yeux
+- plusieurs partie du codes ce qui difficle â distiguer l'un de l'autre 
 
 ## 🗝 Solutions apportés
--j'ai adopté une couleur bleu foncé et ses degrés afin de relaxer les yeux 
--j'ai préciser des conditions sur la force de MDP (par exemple si longuer inf à 12 et le MDP est constitué de même type de caracteres il est faible )
--j'ai utilisé des méthodes en JS afin de faciliter la tâche de sauvegarde 
--j'ai trouver une solution trés pratique celle d'adopter des photos significatifs(par exemple la maison et la chateau : il est plus facile d'entrer à une qu'un chateau )
--j'ai choisir l'utilisation de flexbox pour les bouttons car c'est très pratique 
-- Ajout de commentaires détaillés permet de distinguer (HTML, CSS, JS)
-- Création de fonctions claires et séparées
-- Nettoyage : suppression des répétitions et des parties inutiles
+- J'ai adopté une couleur bleu foncé et ses degrés afin de relaxer les yeux 
+- J'ai préciser des conditions sur la force de MDP (par exemple si longuer inf à 12 et le MDP est constitué de même type de caracteres il est faible )
+- J'ai utilisé des méthodes en JS afin de faciliter la tâche de sauvegarde 
+- J'ai trouver une solution trés pratique celle d'adopter des photos significatifs(par exemple la maison et la chateau : il est plus facile d'entrer à une qu'un chateau )
+- J'ai choisir l'utilisation de flexbox pour les bouttons car c'est très pratique 
+- J'ai ajouter de commentaires détaillés qui permet de distinguer (HTML, CSS, JS)
+- J'ai créater de fonctions claires et séparées
+- J'ai fais un nettoyage : suppression des répétitions et des parties inutiles
